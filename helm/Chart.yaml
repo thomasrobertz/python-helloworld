@@ -1,0 +1,10 @@
+apiVersion: v1
+name: python-helloworld
+description: Pyhton helloworld deployment manifests parameterized with helm charts
+keywords:
+- python
+- helloworld 
+version: 1.0.0
+maintainers:
+- name: trobertz 
+  email: trobertz@xyz.com 

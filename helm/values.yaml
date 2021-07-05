@@ -1,0 +1,20 @@
+namespace:
+  name: demo
+ 
+service:
+  port: 8111
+  type: ClusterIP
+
+image:
+  repository: thomasrobertz/python-helloworld 
+  pullPolicy: IfNotPresent
+
+replicaCount: 3
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 256Mi
+
+configmap:
+  data: "version: alpine"
