@@ -4,7 +4,7 @@ metadata:
   labels:
     app: python-helloworld
   name: python-helloworld
-  namespace: default 
+  namespace: argocd 
 spec:
   replicas: 3
   selector:
@@ -21,7 +21,7 @@ spec:
         app: python-helloworld
     spec:
       containers:
-      - image: pixelpotato/python-helloworld:v1.0.0 
+      - image: thomasrobertz/python-helloworld:0.0.1
         imagePullPolicy: IfNotPresent
         name: python-helloworld
         resources:
