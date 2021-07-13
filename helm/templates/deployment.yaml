@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: python-helloworld
+    tag: alpine    
   name: python-helloworld
   namespace: {{ .Values.namespace.name }} 
 spec:
