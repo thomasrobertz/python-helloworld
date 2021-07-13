@@ -6,7 +6,8 @@ service:
   type: ClusterIP
 
 image:
-  repository: python-helloworld 
+  repository: python-helloworld
+  tag: 1.17.1
   pullPolicy: IfNotPresent
 
 replicaCount: 3
@@ -17,4 +18,4 @@ resources:
     memory: 256Mi
 
 configmap:
-  data: "version: alpine"
+  data: "version: 1.17.1"
