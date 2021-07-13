@@ -6,7 +6,7 @@ service:
   type: ClusterIP
 
 image:
-  repository: thomasrobertz/python-helloworld 
+  repository: python-helloworld 
   pullPolicy: IfNotPresent
 
 replicaCount: 3

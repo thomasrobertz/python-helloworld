@@ -22,7 +22,7 @@ spec:
         app: python-helloworld
     spec:
       containers:
-      - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+      - image: thomasrobertz/{{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: python-helloworld
         resources:
